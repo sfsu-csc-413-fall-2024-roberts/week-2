@@ -12,3 +12,10 @@ public class Driver {
         System.out.println(calculator.evaluate(args[0]));
     }
 }
+
+// java Calculator "1 + 2"
+//
+// java Calculator
+// > 1 + 2 * 3
+// 7
+// >
