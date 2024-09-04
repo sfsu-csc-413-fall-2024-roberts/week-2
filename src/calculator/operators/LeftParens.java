@@ -2,21 +2,20 @@ package calculator.operators;
 
 import calculator.operands.Operand;
 
-public class Divide extends Operator {
+public class LeftParens extends Operator {
 
     @Override
     public Operand execute(Operand operandOne, Operand operandTwo) {
-        return new Operand(
-                operandOne.getValue() / operandTwo.getValue());
+        throw new UnsupportedOperationException("Unimplemented method 'execute'");
     }
 
     @Override
     public int getPrecedence() {
-        return 2;
+        return Integer.MIN_VALUE;
     }
 
     @Override
     public String toString() {
-        return "/";
+        return "(";
     }
 }
