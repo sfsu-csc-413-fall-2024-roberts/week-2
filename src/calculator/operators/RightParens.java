@@ -2,22 +2,21 @@ package calculator.operators;
 
 import calculator.operands.Operand;
 
-public class Subtract extends Operator {
+public class RightParens extends Operator {
 
     @Override
     public Operand execute(Operand operandOne, Operand operandTwo) {
-        return new Operand(
-                operandOne.getValue() + operandTwo.getValue());
+        return null;
     }
 
     @Override
     public int getPrecedence() {
-        return 1;
+        return Integer.MIN_VALUE;
     }
 
     @Override
     public String getLexeme() {
-        return "-";
+        return ")";
     }
 
 }

@@ -19,6 +19,13 @@ public class ExpressionReaderTest {
     }
 
     @Test
+    public void testSingleNumber() {
+        ExpressionReader reader = new ExpressionReader("42");
+
+        assertEquals("42", reader.nextToken());
+    }
+
+    @Test
     public void testComplexExpression() {
         String expression = "1 / 2 * 3 + 4 - 5";
 

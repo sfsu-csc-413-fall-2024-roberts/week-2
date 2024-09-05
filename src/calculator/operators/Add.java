@@ -15,4 +15,9 @@ public class Add extends Operator {
         return 1;
     }
 
+    @Override
+    public String getLexeme() {
+        return "+";
+    }
+
 }
